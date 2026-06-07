@@ -1,0 +1,17 @@
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+rank-bm25>=0.2.2
+sentence-transformers>=2.2
+faiss-cpu>=1.7.4
+matplotlib>=3.7
+seaborn>=0.12
+streamlit>=1.30
+nltk>=3.8
+tqdm>=4.65
+kagglehub>=0.3
+ir-datasets>=0.5
+
+
+# Optionnel pour la visualisation UMAP (sinon t-SNE de scikit-learn est utilise)
+umap-learn>=0.5
