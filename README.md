@@ -32,17 +32,6 @@ streamlit run src/app.py                     # interface (recherche + benchmark)
 > Les dossiers `data/`, `artifacts/` et `results/` sont **générés localement** et exclus du
 > dépôt (cf. `.gitignore`). Après un clone, lancez les scripts ci-dessus pour les recréer.
 
-## Exemple de résultats (FiQA, 648 requêtes annotées)
-
-| Méthode | Precision@10 | Recall@10 | MRR | NDCG@10 | Temps moyen |
-|---|---|---|---|---|---|
-| BM25 | 0.083 | 0.367 | 0.364 | 0.298 | ~85 ms |
-| Sémantique | 0.131 | 0.543 | 0.541 | 0.465 | ~25 ms |
-| Hybride | 0.119 | 0.506 | 0.500 | 0.426 | ~95 ms |
-
-Sur FiQA (questions souvent reformulées), la recherche **sémantique dépasse BM25** : peu de
-mots exacts en commun, l'avantage va au sens. Les chiffres dépendent des réglages et se
-régénèrent avec `run_eval.py`.
 
 ## Structure
 
